@@ -4,6 +4,8 @@
   <script src="/socket.io/socket.io.js"></script>
   <script>
   var socket = io();
+  // <!-- Outputs data to the page. Any object can be sent during an event. -->
+  socket.on('message', function(data){document.write(data)});
   </script>
   <body>Hello world</body>
 </html>
